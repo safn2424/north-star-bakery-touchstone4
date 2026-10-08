@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery - Contact</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -35,7 +36,7 @@
         <section>
             <h2>Inquiry and Pre-Order Request</h2>
 
-            <form action="#" method="post">
+            <form id="contact-form" action="#" method="post">
 
                 <fieldset>
                     <legend>Contact Information</legend>
@@ -43,11 +44,13 @@
                     <p>
                         <label for="name">Name:</label><br>
                         <input type="text" id="name" name="name" required>
+                        <span id="name-error" class="error-message"></span>
                     </p>
 
                     <p>
                         <label for="email">Email:</label><br>
                         <input type="email" id="email" name="email" required>
+                        <span id="email-error" class="error-message"></span>
                     </p>
 
                     <p>
@@ -75,6 +78,7 @@
                                   rows="4"
                                   cols="40"
                                   required></textarea>
+                        <span id="details-error" class="error-message"></span>
                     </p>
 
                     <p>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery - Products</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -32,24 +33,39 @@
                  alt="Fresh baked bread from North Star Bakery">
 
             <p>[Brief description of the bread selection]</p>
-
             <p>Price range: [Bread price range]</p>
+
+            <button type="button"
+                    class="favorite-button"
+                    data-product="Breads">
+                Save as Favorite
+            </button>
         </section>
 
         <section>
             <h2>Pastries</h2>
 
             <p>[Brief description of the pastry selection]</p>
-
             <p>Price range: [Pastry price range]</p>
+
+            <button type="button"
+                    class="favorite-button"
+                    data-product="Pastries">
+                Save as Favorite
+            </button>
         </section>
 
         <section>
             <h2>Cakes</h2>
 
             <p>[Brief description of cakes for birthdays and special events]</p>
-
             <p>Price range: [Cake price range]</p>
+
+            <button type="button"
+                    class="favorite-button"
+                    data-product="Cakes">
+                Save as Favorite
+            </button>
         </section>
 
         <section>
@@ -65,8 +81,18 @@
             </figure>
 
             <p>[Brief description of the Signature Loaf]</p>
-
             <p>Price: [Signature Loaf price]</p>
+
+            <button type="button"
+                    class="favorite-button"
+                    data-product="Signature Loaf">
+                Save as Favorite
+            </button>
+        </section>
+
+        <section>
+            <h2>Your Favorite</h2>
+            <p id="favorite-result">No favorite product selected yet.</p>
         </section>
 
     </main>
